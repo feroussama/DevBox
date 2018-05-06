@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminSpaceComponent } from './admin-space.component';
+import { MmbreEqpeProjetComponent } from './mmbre-eqpe-projet.component';
 
-describe('AdminSpaceComponent', () => {
-  let component: AdminSpaceComponent;
-  let fixture: ComponentFixture<AdminSpaceComponent>;
+describe('MmbreEqpeProjetComponent', () => {
+  let component: MmbreEqpeProjetComponent;
+  let fixture: ComponentFixture<MmbreEqpeProjetComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminSpaceComponent ]
+      declarations: [ MmbreEqpeProjetComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminSpaceComponent);
+    fixture = TestBed.createComponent(MmbreEqpeProjetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

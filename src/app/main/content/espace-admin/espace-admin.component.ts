@@ -11,6 +11,8 @@ import { fuseAnimations } from '@fuse/animations';
 export class EspaceAdminComponent {
   forgotPasswordForm: FormGroup;
   forgotPasswordFormErrors: any;
+  rows: any;
+  columns: any;
 
 
 
@@ -38,6 +40,17 @@ export class EspaceAdminComponent {
 
 ngOnInit()
 {
+this.rows = [
+    { name: 'Austin', gender: 'Male', company: 'Swimlane' },
+    { name: 'Dany', gender: 'Male', company: 'KFC' },
+    { name: 'Molly', gender: 'Female', company: 'Burger King' },
+  ];
+  this.columns = [
+    { prop: 'name' },
+    { name: 'Gender' },
+    { name: 'Company' }
+  ];
+
   this.forgotPasswordForm = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
     msg: ['', Validators.required]

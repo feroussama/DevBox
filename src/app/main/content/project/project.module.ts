@@ -9,25 +9,16 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { FuseWidgetModule } from '@fuse/components/widget/widget.module';
 
-import { FuseProjectDashboardComponent } from './project.component';
-import { ProjectDashboardService } from './project.service';
 
-const routes: Routes = [
-    {
-        path     : '**',
-        component: FuseProjectDashboardComponent,
-        resolve  : {
-            data: ProjectDashboardService
-        }
-    }
-];
+
+
 
 @NgModule({
     declarations: [
-        FuseProjectDashboardComponent
+    
     ],
     imports     : [
-        RouterModule.forChild(routes),
+      
 
         CdkTableModule,
         MatButtonModule,
@@ -44,7 +35,7 @@ const routes: Routes = [
         FuseWidgetModule
     ],
     providers   : [
-        ProjectDashboardService
+       
     ]
 })
 export class FuseProjectDashboardModule

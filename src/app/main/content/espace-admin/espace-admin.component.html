@@ -42,11 +42,11 @@
               <ngx-datatable-column name="Last Name" prop="lastName"></ngx-datatable-column>
 
               <ngx-datatable-column name="Type" prop="Type"></ngx-datatable-column>
-                 
-                  
-                  
+
+
+
             </ngx-datatable>
-            
+
 
 
           </div>
@@ -87,7 +87,7 @@
 
 
 
-            <ngx-datatable class="material" [rows]="rows" [loadingIndicator]="loadingIndicator" [columnMode]="'force'" [headerHeight]="48"
+            <ngx-datatable class="material" [rows]="rows" [columns]="columns" [loadingIndicator]="loadingIndicator" [columnMode]="'force'" [headerHeight]="48"
               [footerHeight]="56" [rowHeight]="'auto'" [scrollbarH]="true" [reorderable]="reorderable" [selectionType]="'checkbox'"
               [limit]="10">
 
@@ -106,6 +106,7 @@
               <ngx-datatable-column name="Last Name" prop="lastName"></ngx-datatable-column>
 
               <ngx-datatable-column name="Company" prop="company"></ngx-datatable-column>
+
             </ngx-datatable>
 
           </div>
@@ -184,7 +185,7 @@
     </mat-tab>
 
     <mat-tab label="Gestion Des Formation">
- 
+
 
     </mat-tab>
     <mat-tab label="Gestion des Notification">
