@@ -20,9 +20,7 @@ import { RegistreComponent } from './main/content/registre/registre.component';
 import { ForgotPasswordComponent } from './main/content/forgot-password/forgot-password.component';
 import { ProfileComponent } from './main/content/profile/profile.component';
 import { EspaceAdminComponent } from './main/content/espace-admin/espace-admin.component';
-
 import { LoginAdminComponent } from './main/content/login-admin/login-admin.component';
-
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { TestValidFormComponent } from './main/content/test-valid-form/test-valid-form.component';
 import { SigninPropComponent } from './main/content/signin-prop/signin-prop.component';
@@ -31,14 +29,12 @@ import { PropProfileComponent } from './main/content/prop-profile/prop-profile.c
 import { ProjectStepComponent } from './main/content/project-step/project-step.component';
 import { LoginPropComponent } from './main/content/login-prop/login-prop.component';
 import { TestTechComponent } from './main/content/test-tech/test-tech.component';
-
 import { FuseAcademyModule } from './main/content/academy/academy.module';
 import { FuseProjectDashboardComponent } from './main/content/project/project.component';
 import { FuseProjectDashboardModule } from './main/content/project/project.module';
 import { AddProjectComponent } from './main/content/add-project/add-project.component';
 import { ListProjectComponent } from './main/content/list-project/list-project.component';
 import { MmbreEqpeProjetComponent } from './main/content/mmbre-eqpe-projet/mmbre-eqpe-projet.component';
-import { MoreComponent } from './main/content/more/more.component';
 
 
 
@@ -101,7 +97,6 @@ const appRoutes: Routes = [
         path: 'projectstep',
         component: ProjectStepComponent
 
-        
     },
     {
         path: 'start',
@@ -139,7 +134,6 @@ const appRoutes: Routes = [
         AddProjectComponent,
         ListProjectComponent,
         MmbreEqpeProjetComponent,
-        MoreComponent,
    
        
    
@@ -147,7 +141,6 @@ const appRoutes: Routes = [
         
     ],
     imports     : [
-        MoreComponent,
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
@@ -165,7 +158,7 @@ const appRoutes: Routes = [
         FuseAcademyModule,
         FuseProjectDashboardModule    ],
     providers: [
-        MoreComponent
+        
      ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA

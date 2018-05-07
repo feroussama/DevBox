@@ -11,7 +11,7 @@
 
     <div class="actions" fxLayout="row" fxLayoutAlign="end center" *fuseIfOnDom [@animate]="{value:'*',params:{delay:'200ms'}}">
       <!-- ADD FILE BUTTON -->
-
+      
       <input hidden type="file" #fileInput/>
       <button mat-raised-button color="accent" (click)="fileInput.click()" *fuseIfOnDom [@animate]="{value:'*', params:{delay:'300ms',scale:'0.2'}}">
         Changer Avatar

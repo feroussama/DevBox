@@ -56,10 +56,46 @@
         </script>
 
       </div>
+      <div *ngFor="let ques of questions">
+
+      <div>
+        <code><strong> Qustion : </strong> {{ques.q}} </code>
+      </div>
+      <br>
+      
+      
+      <div>
+        <mat-radio-group class="example-radio-group">
+          <div>
+            <mat-radio-button class="example-radio-button">
+              {{ques.qc1}}
+            </mat-radio-button>
+          </div>
+          <div>
+            <mat-radio-button class="example-radio-button">
+              {{ques.qc2}}
+            </mat-radio-button>
+          </div>
+          <div>
+            <mat-radio-button class="example-radio-button">
+              {{ques.qc3}}
+            </mat-radio-button>
+          </div>
+        </mat-radio-group>
+      </div>
+      </div>
+
+     
+      
 
 
 
-<br>
+
+
+
+
+
+      <br>
       <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
         <button mat-raised-button type="submit" mat-button class="mat-pink-bg">
           Ajouter

@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { MatDialog } from '@angular/material';
+
 import { fuseAnimations } from '@fuse/animations';
-//import { MoreComponent } from './main/content/more/more.component';
+
 
 @Component({
   selector: 'app-list-project',
@@ -16,17 +16,8 @@ export class ListProjectComponent implements OnInit {
   projects: any[];
   categories: any[];
 
-  constructor(public dialog: MatDialog) { }
-  newContact() {
-  /*  this.dialogRef = this.dialog.open(MoreComponent, {
-      panelClass: 'contact-form-dialog',
-      data: {
-        action: 'new'
-      }
-    });*/
-
-  
-  }
+  constructor() { }
+ 
 
   ngOnInit() {
 
